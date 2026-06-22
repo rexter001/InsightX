@@ -13,6 +13,18 @@ connectDB();
 
 const app = express();
 
+app.use(
+    cors({
+        origin: [
+            'http://localhost:5173',
+            'https://insight-x-eta.vercel.app'
+        ],
+        credentials: true,
+    })
+);
+
+app.use(express.json());
+
 app.use('/api/auth', authRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/admin', adminRoutes);
@@ -28,6 +40,7 @@ app.get('/api', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () =>
     console.log(`Server executing in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
