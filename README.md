@@ -2,6 +2,14 @@
 
 A full-stack analytics management platform designed to provide organizations with powerful business intelligence through interactive dashboards, real-time metrics, and role-based access control. The platform enables users to manage analytical datasets, visualize key performance indicators, and monitor business growth using dynamic charts and comprehensive reporting.
 
+## Live Demo
+
+- **Frontend:** https://insight-x-eta.vercel.app
+- **Backend API:** https://insightx-3a0a.onrender.com
+- **API Health Check:** https://insightx-3a0a.onrender.com/api
+
+---
+
 ## Features
 
 - JWT Authentication and Authorization
@@ -18,22 +26,28 @@ A full-stack analytics management platform designed to provide organizations wit
 - RESTful API Architecture
 - Professional Admin Panel with User Management
 
-## Screenshots
+---
 
 ## Screenshots
 
 ### Dashboard
+
 ![Dashboard](./Screenshots/Dashboard.png)
 
 ### Analytics Management
+
 ![Management](./Screenshots/Management.png)
 
 ### Admin Panel
+
 ![Admin Panel](./Screenshots/Admin-Panel.png)
+
+---
 
 ## Tech Stack
 
 ### Frontend
+
 - React.js
 - Vite
 - React Router DOM
@@ -44,6 +58,7 @@ A full-stack analytics management platform designed to provide organizations wit
 - React Hot Toast
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB Atlas
@@ -52,8 +67,11 @@ A full-stack analytics management platform designed to provide organizations wit
 - bcryptjs
 
 ### Deployment
+
 - Vercel (Frontend)
 - Render (Backend)
+
+---
 
 ## Installation
 
@@ -88,6 +106,12 @@ Run the backend:
 npm run dev
 ```
 
+Seed the database:
+
+```bash
+npm run seed
+```
+
 ---
 
 ## Frontend Setup
@@ -112,7 +136,7 @@ http://localhost:5173
 
 ---
 
-## Default Admin Credentials
+## Demo Admin Credentials
 
 ```text
 Email: admin@insightx.com
